@@ -3,6 +3,7 @@ using Hunah.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Hunah.Controllers
 {
@@ -17,7 +18,8 @@ namespace Hunah.Controllers
 
         public ActionResult Index()
         {
-            List<Animal> model = _db.Animals.OrderBy(animals => animals.Name).ToList();
+            List<Animal> model = _db.Animals.Include(animals => animals.Species).ToList();
+            // List<Animal> model = _db.Animals.OrderBy(animals => animals.Name).ToList();
             return View(model);
         }
         // this actionResult "OrderBy" lists the DB entries by alphabetical order
@@ -26,6 +28,7 @@ namespace Hunah.Controllers
         public ActionResult Edit(int id)
         {
             var thisAnimal = _db.Animals.FirstOrDefault(animals => animals.AnimalId == id);
+            ViewBag.SpeciesId = new SelectList(_db.Species, "SpeciesId", "Name");
             return View(thisAnimal);
         }
 
@@ -55,6 +58,7 @@ namespace Hunah.Controllers
         // [HttpGet]
         public ActionResult Create()
         {
+            ViewBag.SpeciesId = new SelectList(_db.Species, "SpeciesId", "Name");
             return View();
         }
 
