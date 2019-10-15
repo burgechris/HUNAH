@@ -20,7 +20,7 @@ namespace Hunah.Controllers
             return View(model);
         }
 
-
+        // [HttpGet]
         public ActionResult Create()
         {
             return View();

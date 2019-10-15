@@ -12153,7 +12153,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "MySqlConnector >= 0.59.2",
-      "Pomelo.EntityFrameworkCore.MySql"
+      "Pomelo.EntityFrameworkCore.MySql >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -12218,7 +12218,7 @@
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[2.2.0, )"
           }
         },
         "imports": [
