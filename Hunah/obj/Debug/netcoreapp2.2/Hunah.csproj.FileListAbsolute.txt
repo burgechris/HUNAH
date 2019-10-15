@@ -24,3 +24,5 @@
 /Users/Guest/Desktop/Hunah.Solution/Hunah/obj/Debug/netcoreapp2.2/Hunah.csproj.CopyComplete
 /Users/Guest/Desktop/Hunah.Solution/Hunah/obj/Debug/netcoreapp2.2/Razor/Views/Animals/Create.g.cshtml.cs
 /Users/Guest/Desktop/Hunah.Solution/Hunah/obj/Debug/netcoreapp2.2/Razor/Views/Animals/Details.g.cshtml.cs
+/Users/Guest/Desktop/Hunah.Solution/Hunah/obj/Debug/netcoreapp2.2/Razor/Views/Animals/Edit.g.cshtml.cs
+/Users/Guest/Desktop/Hunah.Solution/Hunah/obj/Debug/netcoreapp2.2/Razor/Views/Animals/Delete.g.cshtml.cs
