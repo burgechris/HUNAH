@@ -8,7 +8,8 @@
 
 <h3>@Html.DisplayNameFor(model => model.Breed): @Html.DisplayFor(model => model.Breed)<h3>
 
-<p>@Html.ActionLink("Edit Animal", "Edit", new { id = Model.AnimalId })</p>
 
+<p>@Html.ActionLink("Edit Animal", "Edit", new { id = Model.AnimalId })</p>
+<p>@Html.ActionLink("Delete Animal", "Delete", new { id = Model.AnimalId })</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>
 <p>@Html.ActionLink("Back to Main Page", "Index", "Home")</p>
